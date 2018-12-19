@@ -1,0 +1,59 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+}
+
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+}
+
+.main-nav li a
+{
+	color: white;
+	background-color: darkorange;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	border: 1px solid white;
+	padding: 10px 30px;
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid yellow;
+}
+
+.logo img
+{
+	width: 150px;
+	height: auto;
+	float: left;
+}
+
+body
+{
+	background-color = #000000;
+	font-family: monospace;
+	background-size: cover;
+	background-position: center;
+}
+
+.row
+{
+	max-width: 1200px;
+	margin: auto;
+}
