@@ -14,6 +14,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*-- NAVBAR --*/
+.navbar {
+  position:fixed;
+  height: 6vh;
+  width: 100vw;
+  margin-bottom: -6vh;
+  background-color: rgba(50, 50, 50, 0.95);
+}
 
 /*-- TOP -- */
 .top-desc {
@@ -93,9 +101,20 @@ body {
   padding-top: 5vh;
 }
 
+.pf-head {
+  border: groove;
+  border-color: rgba(240, 240, 240, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(240, 240, 240);
+  padding: 1vh;
+}
+
 .paxitium {
-  width: 100vw;
+  border: groove;
+  border-color: rgba(240, 240, 240, 0.5);
+  width: 100%;
   height: 50vh;
+  background-color: rgba(0, 0, 0, 0.8);
   background-image: url(images/Paxitium_bg.png);
   background-size: cover;
   padding: 5vh;
@@ -105,6 +124,11 @@ body {
 .other-projects {
   width: 100vw;
   height: 50vh;
-  padding: 5vh;
   display: flex;
+}
+
+.op_inner {
+  width:33%;
+  border: groove;
+  border-color: rgba(240, 240, 240, 0.5);
 }
