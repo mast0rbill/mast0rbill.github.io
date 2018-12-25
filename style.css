@@ -20,7 +20,7 @@ body {
   height: 6vh;
   width: 100vw;
   margin-bottom: -6vh;
-  background-color: rgba(50, 50, 50, 0.95);
+  background-color: rgba(40, 40, 40, 0.95);
 }
 
 /*-- TOP -- */
@@ -92,7 +92,7 @@ body {
 /*-- PORTFOLIO --*/
 .portfolio {
   background-image: url(images/Resume_bg.jpg);
-  width: 100vw;
+  width: 95vw;
   height: 120vh;
   margin-left: auto;
   margin-right: auto;
@@ -103,6 +103,8 @@ body {
 
 .pf-head {
   border: groove;
+  width: 100%;
+  height: auto;
   border-color: rgba(240, 240, 240, 0.5);
   background-color: rgba(0, 0, 0, 0.8);
   color: rgb(240, 240, 240);
@@ -122,13 +124,13 @@ body {
 }
 
 .other-projects {
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   display: flex;
 }
 
 .op_inner {
-  width:33%;
+  width:33.33333333%;
   border: groove;
   border-color: rgba(240, 240, 240, 0.5);
 }
