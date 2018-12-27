@@ -120,4 +120,5 @@ html {
   color: white; 
   border: solid 1px; 
   border-color: rgba(240, 240, 240, 0.2);
+  text-align: center;
 }
