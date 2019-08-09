@@ -51,10 +51,10 @@ html {
 /*-- TECHNICAL SKILLS -- */
 .ts-outer {
   width: 100%;
-  height: 100vh;
+  height: 140vh;
   box-shadow: inset 0 0px 10vw 10vh rgb(20, 20, 20); 
   background-image: url(images/Resume_bg.jpg);
-  padding-top: 25vh;
+  padding-top: 7vh;
   background-size: cover;
 }
 
@@ -65,7 +65,7 @@ html {
   margin-right: auto;
   background: black;
   width: 90%;
-  height: 50vh;
+  height: 125vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -76,7 +76,7 @@ html {
 
 .tskills-inner {
   width: 100%;
-  height: 92%;
+  height: 97%;
   padding: 1vh;
   font-size: 2.5vh;
   color: white;
