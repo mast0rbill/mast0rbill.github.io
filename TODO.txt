@@ -1,0 +1,9 @@
+- Make HTML-resume instead of display PDF
+- " if something wasn’t really accessible ild kinda skip over sometimes" - Peter
+- "so if you’re linking off to youtube or google play, may take too long for them to see"
+- Make inline videos next to favorite projects
+- Auto play videos
+- Show frog-go 
+- Put internships into portfolio
+- take time to record gif/vid of diff projects 
+- 
