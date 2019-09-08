@@ -125,3 +125,7 @@ html {
   border-color: rgba(240, 240, 240, 0.2);
   text-align: center;
 }
+
+.btn-outline-light {
+    background-color:rgb(0.5, 0.5, 0.5, 0.5);
+}
