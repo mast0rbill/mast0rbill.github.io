@@ -1,393 +1,582 @@
-<!doctype html>
-<html lang="en">
+---
+layout: default
+title: William Liu — Software Engineer
+---
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="images/Profile.jpg">
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
+    <div class="hero-blob b3"></div>
+    <div class="hero-grid"></div>
+  </div>
 
-    <title>William's Web Portfolio</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <!-- <nav class="navbar fixed-top navbar-dark bg-dark">
-      Navbar content
-    </nav> -->
-
-    <main role="main">
-      <div class="top-desc">
-          <div class="top-desc-inner">
-            <img class="rounded-circle" src="images/Profile.jpg" alt="Profile Pic">
-            <h1 style="font-size:5vh; margin-bottom:3vh;">Hello! I'm <b>William Liu</b>. Welcome to my web portfolio.</h1>
-            <a class="btn btn-lg btn-outline-light" style="width:50vh; padding:1vh; height:5vh; font-size:2vh; margin-left:auto; margin-right:auto; margin-bottom:1vh; display:block;" href="#portfolio" role="button"><b>Projects</b></a>
-            <a class="btn btn-lg btn-outline-light" style="width:50vh; padding:1vh; height:5vh; font-size:2vh; margin-left:auto; margin-right:auto; display:block;" href="#ts-goto" role="button"><b>Résumé</b></a>
-            <a href="https://github.com/mast0rbill/" target="_blank" role="button"><img class="rounded" style="margin-top:9vh; margin-left:auto; margin-right:1vh; width:10vh; height:auto;" src="images/github.png"></a>
-            <a href="https://www.linkedin.com/in/william-l-21654611a/" target="_blank" role="button"><img class="rounded" style="margin-top:9vh; margin-left:1vh; margin-right:auto; width:6vh; height:auto;" src="images/linkedin.png"></a>
-          </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow fade-up">Hi, I'm</p>
+      <h1 class="hero-name fade-up delay-1">William Liu</h1>
+      <p class="hero-subtitle fade-up delay-2">Software Engineer</p>
+      <p class="hero-desc fade-up delay-3">
+        Experienced in systems programming, graphics engineering, and game development.
+        Proficient in Rust, C++, C#, and Java — with shipped games, award-winning
+        hackathon projects, and work spanning AOT compilers, real-time kernels,
+        and OpenGL rendering pipelines.
+      </p>
+      <div class="hero-actions fade-up delay-4">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="https://github.com/mast0rbill/" target="_blank" rel="noopener" class="btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/william-l-21654611a/" target="_blank" rel="noopener" class="btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
-      
-      <!-- PORTFOLIO -->
-      <div id="portfolio" class="portfolio">
-        
-        <header class="pf-head">
-          <h1 style="text-align:center; font-size:5vh; font-family:'Franklin Gothic Medium', 'Arial', Arial, sans-serif;"><b>PROJECTS</b></h1>
-          <h2 style="text-align:center; font-size:2vh; font-family:'Franklin Gothic Medium', 'Arial', Arial, sans-serif;">A collection of my personal projects</h1>
-        </header>
+    </div>
+    <div class="hero-photo fade-up delay-2">
+      <img src="/images/Profile.jpg" alt="William Liu">
+    </div>
+  </div>
 
-        <div class="container-fluid">
-          <!-- PAXITIUM -->
-          <div class="row large-showcase" style="background-image: url(images/Paxitium_bg.png);">
-            <div class="col-md-5" style="padding:6vh 1vh; text-align:center;">
-              <img src="images/Pax_logo.png" style="width:45vh; height:16vh; margin-left:auto; margin-right:auto; margin-bottom:0;">
-              <p style="font-size:2vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">FULL-SCALE MULTIPLAYER SURVIVAL GAME</p>
+  <div class="hero-fade" aria-hidden="true"></div>
+  <a class="hero-scroll" href="#projects" aria-label="Scroll to projects">
+    <span>Scroll</span>
+    <div class="scroll-chevron"></div>
+  </a>
+</section>
 
-              <div style="display:inline-block; text-align:left;">
-                <div style="display:flex;">
-                  <img class="rounded-circle" loading="lazy" src="images/Pax_preview.gif" style="margin-bottom:5vh; margin-top:0vh; height:20vh; width:20vh; display:inline-block; margin-right:2vh;" alt="Paxitium"> 
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience" class="experience">
+  <div class="exp-inner">
+    <div class="fade-up">
+      <h2 class="section-title">Experience</h2>
+    </div>
 
-                  <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                    <br>&bull; Reached <b>#1 on IndieDB</b>
-                    <br>&bull; Open-world map featuring multiple islands
-                    <br>&bull; Fully authoritative multiplayer system
-                    <br>&bull; Extensive inventory management
-                    <br>&bull; In-depth movement and vehicle system
-                    <br>&bull; Dedicated server hosted on Google Cloud
-                    <br>
-                  </p>
-                </div>
-              </div>
+    <div class="exp-list">
 
-              <div>
-                <a href="https://www.youtube.com/channel/UCbMX2MEOcHGa_l7msGQ3Img" target="_blank" role="button"><img class="rounded" style="width:11vh; height:auto; margin-right:2vh; margin-top:-3vh; margin-bottom:-4vh;" src="images/youtube.png"></a>
-                <a href="https://www.indiedb.com/games/paxitium" target="_blank" role="button"><img class="rounded" style="width:8vh; height:auto; margin-top:-3vh; margin-bottom:-4vh;" src="images/indiedb.png"></a>
-              </div>
-            </div>
+      <!-- Meta (current) -->
+      <div class="exp-item fade-up">
+        <div class="exp-header">
+          <div class="exp-logo" style="background:#0082fb;">M</div>
+          <div class="exp-info">
+            <h3 class="exp-role">Senior Software Engineer, Neural Band</h3>
+            <p class="exp-company">Meta · Wearables · New York</p>
+            <a href="https://www.nature.com/articles/s41586-025-09255-w" target="_blank" rel="noopener" class="exp-publication">📄 Nature — A generic non-invasive neuromotor interface for human-computer interaction</a>
+          </div>
+          <span class="exp-dates">Aug 2023 – Present</span>
+        </div>
+      </div>
 
-            <div class="col-md-7" style="padding:7vh 2vh; text-align:center;">
-              <div style="position:relative; background-color:black; width:100%; padding-top:56.25%;">
-                <iframe style="width:100%; height:100%; top:0; left:0; position:absolute;" src="https://www.youtube.com/embed/dVDuL38Pasg"></iframe> 
-              </div>
+      <!-- GTS -->
+      <div class="exp-item fade-up">
+        <div class="exp-header">
+          <div class="exp-logo" style="background:#1a3a5c;">G</div>
+          <div class="exp-info">
+            <h3 class="exp-role">Software Engineer Intern, Core Tech &amp; Market Access</h3>
+            <p class="exp-company">GTS · New York</p>
+          </div>
+          <span class="exp-dates">Sep – Dec 2022</span>
+        </div>
+      </div>
+
+      <!-- Meta Intern -->
+      <div class="exp-item fade-up">
+        <div class="exp-header">
+          <div class="exp-logo" style="background:#0082fb;">M</div>
+          <div class="exp-info">
+            <h3 class="exp-role">Software Engineer Intern, Neural Band</h3>
+            <p class="exp-company">Meta · Wearables · New York</p>
+          </div>
+          <span class="exp-dates">Jan – May 2022</span>
+        </div>
+      </div>
+
+      <!-- Microsoft -->
+      <div class="exp-item fade-up">
+        <div class="exp-header">
+          <div class="exp-logo" style="background:#00a4ef;">MS</div>
+          <div class="exp-info">
+            <h3 class="exp-role">Software Engineer Intern, Xbox Game Studios</h3>
+            <p class="exp-company">Microsoft · Vancouver</p>
+          </div>
+          <span class="exp-dates">May – Sep 2021</span>
+        </div>
+      </div>
+
+      <!-- Wish -->
+      <div class="exp-item fade-up">
+        <div class="exp-header">
+          <div class="exp-logo" style="background:#e67e22;">W</div>
+          <div class="exp-info">
+            <h3 class="exp-role">Software Engineer Intern, Marketplace</h3>
+            <p class="exp-company">Wish · Toronto</p>
+          </div>
+          <span class="exp-dates">Sep – Dec 2020</span>
+        </div>
+      </div>
+
+      <!-- Spatial (2nd term) -->
+      <div class="exp-item fade-up">
+        <div class="exp-header">
+          <div class="exp-logo" style="background:#7c3aed;">S</div>
+          <div class="exp-info">
+            <h3 class="exp-role">Software Engineer Intern</h3>
+            <p class="exp-company">Spatial · New York</p>
+          </div>
+          <span class="exp-dates">Jan – May 2020</span>
+        </div>
+      </div>
+
+      <!-- Spatial (1st term) -->
+      <div class="exp-item fade-up">
+        <div class="exp-header">
+          <div class="exp-logo" style="background:#7c3aed;">S</div>
+          <div class="exp-info">
+            <h3 class="exp-role">Software Engineer Intern</h3>
+            <p class="exp-company">Spatial · New York</p>
+          </div>
+          <span class="exp-dates">Apr – Sep 2019</span>
+        </div>
+      </div>
+
+    </div><!-- /exp-list -->
+  </div><!-- /exp-inner -->
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="projects">
+  <div class="projects-inner">
+    <div class="fade-up">
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="filter-tabs fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="systems">Systems</button>
+      <button class="filter-btn" data-filter="graphics">Graphics</button>
+      <button class="filter-btn" data-filter="games">Games</button>
+      <button class="filter-btn" data-filter="web">Web / Mobile</button>
+      <button class="filter-btn" data-filter="ml">ML</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Java Compiler -->
+      <div class="project-card fade-up" data-category="systems">
+        <div class="card-preview gradient-rust">
+          <img class="card-preview-icon card-preview-svg" src="/images/icon-compiler.svg" alt="Compiler icon">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Systems</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/java-compiler-x86-aot" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
             </div>
           </div>
-
-          <!-- HASHTAG CUBED -->
-          <div class="row large-showcase" style="background-image: url(images/hashtag_bg.jpg); background-size: cover;">
-            <div class="col-md-5" style="padding:6vh 1vh; text-align:center;">
-              <p style="font-size:6vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">#³</p>
-              <p style="font-size:2vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">AR SOCIAL MEDIA PLATFORM</p>
-
-              <div style="display:inline-block; text-align:left;">
-                <div style="display:flex;">
-                  <img class="rounded-circle" loading="lazy" src="images/hashtag_icon.gif" style="margin-bottom:5vh; margin-top:0vh; height:20vh; width:20vh; display:inline-block; margin-right:2vh;" alt="Froggo"> 
-
-                  <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                    <br>&bull; MIT Reality Hacks 2020 Project
-                    <br>&bull; Won the <b>Best Use of Nreal</b> Prize
-                    <br>&bull; Pioneers media filtering in AR
-                    <br>&bull; Android project built in Unity
-                    <br>&bull; Python backend on Azure
-                    <br>&bull; MongoDB database to transfer data
-                    <br>
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <a href="https://devpost.com/software/project-x0bvzw8s654m" target="_blank" role="button"><img class="rounded" style="width:20vh; height:auto; margin-right:2vh; margin-top:-3vh; margin-bottom:-4vh;" src="images/Devpost_icon.png"></a>
-                <a href="https://github.com/mast0rbill/hashtag-ar" target="_blank" role="button"><img class="rounded" style="width:10vh; height:auto; margin-top:-3vh; margin-bottom:-4vh;" src="images/github.png"></a>
-              </div>
-            </div>
-
-            <div class="col-md-7" style="padding:7vh 2vh; text-align:center;">
-              <div style="position:relative; background-color:black; width:100%; padding-top:56.25%;">
-                <iframe style="width:100%; height:100%; top:0; left:0; position:absolute;" src="https://www.youtube.com/embed/D8KYSyvnFCU"></iframe> 
-              </div>
-            </div>
-          </div>
-
-          <!-- SMAPS -->
-          <div class="row large-showcase" style="background-image: url(images/smaps_bg.jpg); background-size: cover;">
-            <div class="col-md-5" style="padding:6vh 1vh; text-align:center;">
-              <p style="font-size:6vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">SMAPS</p>
-              <p style="font-size:2vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">GOOGLE MAPS WITHOUT INTERNET</p>
-
-              <div style="display:inline-block; text-align:left;">
-                <div style="display:flex;">
-                  <img class="rounded-circle" loading="lazy" src="images/smaps_icon.gif" style="margin-bottom:5vh; margin-top:0vh; height:20vh; width:20vh; display:inline-block; margin-right:2vh;" alt="Froggo"> 
-
-                  <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                    <br>&bull; MHacks 12 Project
-                    <br>&bull; Won Lyft's <b>Best Transportation Hack</b>
-                    <br>&bull; Allows more people access to maps 
-                    <br>&bull; Simulates web requests via SMS on Twilio
-                    <br>&bull; Node.js backend layer to access Maps API
-                    <br>&bull; Phone client built in Android Studio
-                    <br>
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <a href="https://devpost.com/software/smaps" target="_blank" role="button"><img class="rounded" style="width:20vh; height:auto; margin-right:2vh; margin-top:-3vh; margin-bottom:-4vh;" src="images/Devpost_icon.png"></a>
-                <a href="https://github.com/mast0rbill/SMapS" target="_blank" role="button"><img class="rounded" style="width:10vh; height:auto; margin-top:-3vh; margin-bottom:-4vh;" src="images/github.png"></a>
-              </div>
-            </div>
-
-            <div class="col-md-7" style="padding:7vh 2vh; text-align:center;">
-              <div style="position:relative; background-color:black; width:100%; padding-top:56.25%;">
-                <iframe style="width:100%; height:100%; top:0; left:0; position:absolute;" src="https://www.youtube.com/embed/TRdKgbFzYlA"></iframe> 
-              </div>
-            </div>
-          </div>
-
-          <!-- FROG-GO -->
-          <div class="row large-showcase" style="background-image: url(images/Frog_bg.png); background-size: cover;">
-            <div class="col-md-5" style="padding:6vh 1vh; text-align:center;">
-              <p style="font-size:6vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">FROG-GO</p>
-              <p style="font-size:2vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">ARCADE JUMPING GAME FOR ANDROID</p>
-
-              <div style="display:inline-block; text-align:left;">
-                <div style="display:flex;">
-                  <img class="rounded-circle" loading="lazy" src="images/Frog_preview.gif" style="margin-bottom:5vh; margin-top:0vh; height:20vh; width:20vh; display:inline-block; margin-right:2vh;" alt="Froggo"> 
-
-                  <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                    <br>&bull; Developed using Unity3D and Blender
-                    <br>&bull; Google AdMob integration
-                    <br>&bull; Leaderboard using Google Play Services
-                    <br>&bull; Customization system for map and frog
-                    <br>&bull; Currency and achievement system
-                    <br>&bull; Released on Google Play
-                    <br>
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <a href="https://play.google.com/store/apps/details?id=com.lutonstudios.froggo" target="_blank" role="button"><img class="rounded" style="width:20vh; height:auto; margin-right:2vh; margin-top:-3vh; margin-bottom:-4vh;" src="images/gplay.png"></a>
-                <a href="https://github.com/luton-studios/frog-go" target="_blank" role="button"><img class="rounded" style="width:10vh; height:auto; margin-top:-3vh; margin-bottom:-4vh;" src="images/github.png"></a>
-              </div>
-            </div>
-
-            <div class="col-md-7" style="padding:7vh 2vh; text-align:center;">
-              <div style="position:relative; background-color:black; width:100%; padding-top:56.25%;">
-                <iframe style="width:100%; height:100%; top:0; left:0; position:absolute;" src="https://www.youtube.com/embed/1xQF89_nLI0"></iframe> 
-              </div>
-            </div>
-          </div>
-
-          <!-- PROJECT ROW -->
-          <div class="row">
-            <div class="col-lg-6 small-showcase" style="background-image: url(images/Audio_bg.png);">
-              <p style="font-size:4vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">AUDIO VISUALIZER</p>
-
-              <div style="display:inline-block; text-align:left;">
-                <div style="display:flex;">
-                  <img class="rounded-circle" loading="lazy" src="images/Audio_preview.gif" style="margin-bottom:5vh; margin-top:2.5vh; height:15vh; width:15vh; display:inline-block; margin-right:2vh;" alt="audio"> 
-
-                  <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                    <br><b>Audio-based project made with Processing</b>
-                    <br>
-                    <br>&bull; Takes mp3 clip and visualizes amplitudes
-                    <br>&bull; Transforms input note sequence into wave
-                    <br>&bull; Custom wave function for audio player
-                    <br>
-                    <br>
-                    <a href="https://github.com/mast0rbill/audio-project" target="_blank" role="button"><img class="rounded" style="margin-left:5.5vh; width:10vh; height:auto; margin-top:-1vh; margin-bottom:-4vh;" src="images/github.png"></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 small-showcase" style="background-image: url(images/ML_BG.png);">
-                <p style="font-size:4vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">MACHINE LEARNING</p>
-
-                <div style="display:inline-block; text-align:left;">
-                  <div style="display:flex;">
-                    <img class="rounded-circle" src="images/ML_icon.png" style="margin-bottom:5vh; margin-top:2.5vh; height:15vh; width:15vh; display:inline-block; margin-right:2vh;" alt="ML"> 
-  
-                    <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                      <br><b>Language Detection</b>
-                      <br>&bull; Learns whether a word is English with back-propagation
-                      <br>
-                      <br><b>Tic Tac Toe</b>
-                      <br>&bull; Learns to play tic-tac-toe via genetic algorithms
-                      <br>
-                      <br>
-                      <a href="https://github.com/mast0rbill/machine-learning" target="_blank" role="button"><img class="rounded" style="margin-left:10vh; width:10vh; height:auto; margin-top:-1vh; margin-bottom:-4vh;" src="images/github.png"></a>
-                    </p>
-                  </div>
-                </div>
-            </div>
-          </div>
-
-          <!-- PROJECT ROW -->
-          <div class="row">
-                <div class="col-lg-6 small-showcase" style="background-image: url(images/mtjc_bg.jpg);">
-                  <p style="font-size:4vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">MORE THAN JUST CHESS</p>
-    
-                  <div style="display:inline-block; text-align:left;">
-                    <div style="display:flex;">
-                      <img class="rounded-circle" loading="lazy" src="images/mtjc_preview.gif" style="margin-bottom:5vh; margin-top:2.5vh; height:15vh; width:15vh; display:inline-block; margin-right:2vh;" alt="Froggo"> 
-    
-                      <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                        <br><b>A modern take on the classic game of chess</b>
-                        <br>
-                        <br>&bull; Created using Unity3D and C#
-                        <br>&bull; Pieces have mana & HP, evolve into other pieces
-                        <br>&bull; Rework collab. with Jan Ostermann
-                        <br>
-                        <br>
-                        <a href="https://github.com/mast0rbill/more-than-just-chess" target="_blank" role="button"><img class="rounded" style="margin-left:7vh; width:10vh; height:auto; margin-top:-1vh; margin-bottom:-4vh;" src="images/github.png"></a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-lg-6 small-showcase" style="background-image: url(images/Tossing_bg.png);">
-                    <p style="font-size:4vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">TOSSING DEMO</p>
-    
-                    <div style="display:inline-block; text-align:left;">
-                      <div style="display:flex;">
-                        <img class="rounded-circle" loading="lazy" src="images/Toss_preview.gif" style="margin-bottom:5vh; margin-top:2.5vh; height:15vh; width:15vh; display:inline-block; margin-right:2vh;" alt="ML"> 
-      
-                        <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                          <br><b>Tossing demo made in Unity3D</b>
-                          <br>
-                          <br>&bull; Screen- to world space for accurate input
-                          <br>&bull; Rigidbody physics for objects
-                          <br>&bull; Wireframe shader
-                          <br>
-                          <br>
-                          <a href="https://github.com/mast0rbill/spatial-tossing" target="_blank" role="button"><img class="rounded" style="margin-left:5vh; width:10vh; height:auto; margin-top:-1vh; margin-bottom:-4vh;" src="images/github.png"></a>
-                        </p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-
-          <!-- PROJECT ROW -->
-          <div class="row">
-            <div class="col-lg-6 small-showcase" style="background-image: url(images/5428_bg.png);">
-                <p style="font-size:4vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">FIRST ROBOTICS</p>
-
-                <div style="display:inline-block; text-align:left;">
-                  <div style="display:flex;">
-                    <img class="rounded-circle" src="images/FRC_icon.jpg" style="margin-bottom:5vh; margin-top:2.5vh; height:15vh; width:15vh; display:inline-block; margin-right:2vh;" alt="FRC Pic"> 
-  
-                    <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                      <br><b>Robot software for FRC Team 5428 in 2017</b>
-                      <br>&bull; Used in robot at provincial level contests
-                      <br>&bull; Features software-hardware interaction:
-                      <br>&nbsp;&nbsp;&nbsp;&nbsp;> Input handling with XBox controllers
-                      <br>&nbsp;&nbsp;&nbsp;&nbsp;> Camera feedback via wifi
-                      <br>
-                      <br>
-                      <a href="https://github.com/mast0rbill/2017-FRC" target="_blank" role="button"><img class="rounded" style="margin-left:5.5vh; width:10vh; height:auto; margin-top:-1vh; margin-bottom:-4vh;" src="images/github.png"></a>
-                    </p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 small-showcase" style="background-image: url(images/Societatem_bg.png);">
-                <p style="font-size:4vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">SOCIETATEM</p>
-
-                <div style="display:inline-block; text-align:left;">
-                  <div style="display:flex;">
-                    <img class="rounded-circle" loading="lazy" src="images/Societatem_preview.gif" style="margin-bottom:5vh; margin-top:2.5vh; height:15vh; width:15vh; display:inline-block; margin-right:2vh;" alt="Societatem Pic"> 
-  
-                    <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                      <br><b>64-player multiplayer FPS game made in Unity3D</b>
-                      <br>
-                      <br>&bull; Features large map, vehicles, and variety of weapons
-                      <br>&bull; Class progression and item shop system
-                      <br>&bull; Won 2nd place as Indie Game of 2014 on ArmedUnity
-                      <br>
-                      <br>
-                      <a href="https://www.youtube.com/watch?v=tcYPXPr2piE" target="_blank" role="button"><img class="rounded" style="margin-left:10vh; width:11vh; height:auto; margin-top:-2vh; margin-bottom:-4vh;" src="images/youtube.png"></a>
-                    </p>
-                  </div>
-                </div>
-            </div>
-          </div>
-
-          <!-- PROJECT ROW -->
-          <div class="row">
-            <div class="col-lg-6 small-showcase" style="background-image: url(images/ZSZ_bg.png);">
-                <p style="font-size:4vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">ZOMBIESURVIVORZ</p>
-
-                <div style="display:inline-block; text-align:left;">
-                  <div style="display:flex;">
-                    <img class="rounded-circle" loading="lazy" src="images/ZSZ_preview.gif" style="margin-bottom:5vh; margin-top:2.5vh; height:15vh; width:15vh; display:inline-block; margin-right:2vh;" alt="ZSZ"> 
-  
-                    <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                      <br><b>Top-down shooter written in Java </b>
-                      <br>
-                      <br>&bull; Uses Java Swing for graphics API
-                      <br>&bull; Map tiles generated from color texture 
-                      <br>&bull; Simple enemy AI with custom pathfinding
-                      <br>
-                      <br>
-                      <a href="https://github.com/mast0rbill/zombiesurvivorz" target="_blank" role="button"><img class="rounded" style="margin-left:4vh; width:10vh; height:auto; margin-top:-1vh; margin-bottom:-4vh;" src="images/github.png"></a>
-                    </p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 small-showcase" style="background-image: url(images/airhockey_bg.png);">
-                <p style="font-size:4vh; color:rgb(230, 230, 230); font-weight:bold; margin-bottom:3vh;">OLDER PROJECTS</p>
-
-                <div style="display:inline-block; text-align:left;">
-                  <div style="display:flex;">
-                    <img class="rounded-circle" loading="lazy" src="images/OP_Preview.gif" style="margin-bottom:5vh; margin-top:2.5vh; height:15vh; width:15vh; display:inline-block; margin-right:2vh;" alt="OP"> 
-  
-                    <p style="font-size:1.6vh; color:rgb(230, 230, 230); margin-bottom:2vh;">
-                      <br>&bull; A selection of my older programming projects
-                      <br>&bull; Highlights my introduction to programming:
-                      <br>&nbsp;&nbsp;&nbsp;&nbsp;> 3D rendering engine with walls made with LWJGL
-                      <br>&nbsp;&nbsp;&nbsp;&nbsp;> Two-player air hockey with Java Swing
-                      <br>&nbsp;&nbsp;&nbsp;&nbsp;> A scientific calculator with rudimentary GUI
-                      <br>
-                      <br>
-                      <a href="https://github.com/mast0rbill/old-java-programs" target="_blank" role="button"><img class="rounded" style="margin-left:10vh; width:10vh; height:auto; margin-top:-1vh; margin-bottom:-4vh;" src="images/github.png"></a>
-                    </p>
-                  </div>
-                </div>
-            </div>
+          <h3 class="card-title">Java Compiler (x86 AOT)</h3>
+          <p class="card-subtitle">Ahead-of-Time Compiler</p>
+          <p class="card-desc">AOT Java 1.3 compiler written in Rust targeting x86 assembly. Features a custom-designed SSA-based IR with optimization passes including constant folding, dead code elimination, and register allocation.</p>
+          <div class="card-tags">
+            <span class="tag">Rust</span>
+            <span class="tag">x86 Assembly</span>
+            <span class="tag">Compilers</span>
+            <span class="tag">Systems</span>
           </div>
         </div>
       </div>
 
-    
-      <!-- TECHNICAL SKILLS -->
-      <div id="ts-goto" class="ts-outer">
-        <div id="technical-skills" class="technical-skills">
-          <h2 class="ts-top" style="font-size:3vh; height:3%; vertical-align:center; margin-bottom:0;" ><img src="images/Cmd_Icon.png" style="height:100%; width:auto;">Resumé <img src="images/Window_Buttons.png" style="height:60%; width:auto; margin:0.5%; float:right;"></h2>
-          <div class="tskills-inner" style="overflow-y:hidden;">
-            <embed src="images/resume.pdf" width="100%" height="100%" />
+      <!-- Trains -->
+      <div class="project-card fade-up delay-1" data-category="systems">
+        <div class="card-preview gradient-slate">
+          <img class="card-preview-icon card-preview-svg" src="/images/icon-trains.svg" alt="RTOS icon">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Systems</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/trains" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Real-Time Train Control</h3>
+          <p class="card-subtitle">CS 452 — Realtime Kernel</p>
+          <p class="card-desc">Custom real-time kernel with hardware drivers and user programs for controlling physical trains on a track, deployed on ARM hardware.</p>
+          <div class="card-tags">
+            <span class="tag">C++</span>
+            <span class="tag">C</span>
+            <span class="tag">Real-Time</span>
+            <span class="tag">Embedded</span>
+            <span class="tag">ARM</span>
           </div>
         </div>
       </div>
-    </main>
 
-    <footer>
-      <div style="text-align:center; color:white;">
-        <p style="font-size:1.5vh;">
-          This website was designed and written by William Liu. Last updated: January 2021.
-        </p>
+      <!-- OpenGL PBR -->
+      <div class="project-card fade-up delay-2" data-category="graphics">
+        <div class="card-preview gradient-violet">
+          <img class="card-preview-icon card-preview-svg" src="/images/icon-opengl.svg" alt="OpenGL icon">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Graphics</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/opengl-pbr-raster-pipeline" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">OpenGL PBR Raster Pipeline</h3>
+          <p class="card-subtitle">Graphics Engine</p>
+          <p class="card-desc">OpenGL graphics engine with deferred rendering passes, physically-based rendering (PBR) shaders, and screen space reflections. Cross-platform.</p>
+          <div class="card-tags">
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">OpenGL</span>
+            <span class="tag">GLSL</span>
+            <span class="tag">PBR</span>
+          </div>
+        </div>
       </div>
-    </footer>
 
-    <!-- Apparently Bootstrap needs these. -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
-</html>
+      <!-- Paxitium -->
+      <div class="project-card fade-up" data-category="games">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/Paxitium_bg.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/Pax_preview.gif" alt="Paxitium preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Games</span>
+            <div class="card-ext-links">
+              <a href="https://www.youtube.com/channel/UCbMX2MEOcHGa_l7msGQ3Img" target="_blank" rel="noopener" class="card-ext-link" title="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+              </a>
+              <a href="https://www.indiedb.com/games/paxitium" target="_blank" rel="noopener" class="card-ext-link" title="IndieDB">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Paxitium</h3>
+          <p class="card-subtitle">Multiplayer Survival Game</p>
+          <div class="card-award">🏆 #1 on IndieDB</div>
+          <p class="card-desc">Full-scale open-world multiplayer survival game with authoritative networking, inventory systems, vehicles, and a dedicated server on Google Cloud.</p>
+          <div class="card-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Google Cloud</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hashtag Cubed -->
+      <div class="project-card fade-up delay-1" data-category="web">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/hashtag_bg.jpg');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/hashtag_icon.gif" alt="Hashtag Cubed preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Web / Mobile</span>
+            <div class="card-ext-links">
+              <a href="https://devpost.com/software/project-x0bvzw8s654m" target="_blank" rel="noopener" class="card-ext-link" title="Devpost">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/mast0rbill/hashtag-ar" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">#³ Hashtag Cubed</h3>
+          <p class="card-subtitle">AR Social Media Platform</p>
+          <div class="card-award">🏆 Best Use of Nreal — MIT Reality Hacks 2020</div>
+          <p class="card-desc">Augmented reality social media platform pioneering media filtering in AR, with a Python backend on Azure and MongoDB for data transfer.</p>
+          <div class="card-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">Python</span>
+            <span class="tag">Azure</span>
+            <span class="tag">AR</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SMAPS -->
+      <div class="project-card fade-up delay-2" data-category="web">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/smaps_bg.jpg');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/smaps_icon.gif" alt="SMAPS preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Web / Mobile</span>
+            <div class="card-ext-links">
+              <a href="https://devpost.com/software/smaps" target="_blank" rel="noopener" class="card-ext-link" title="Devpost">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/mast0rbill/SMapS" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">SMAPS</h3>
+          <p class="card-subtitle">Google Maps Without Internet</p>
+          <div class="card-award">🏆 Best Transportation Hack — MHacks 12</div>
+          <p class="card-desc">Offline maps app that simulates Google Maps API requests via SMS using Twilio, with a Node.js backend and an Android client.</p>
+          <div class="card-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Android</span>
+            <span class="tag">Twilio</span>
+            <span class="tag">Google Maps API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frog-Go -->
+      <div class="project-card fade-up" data-category="games">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/Frog_bg.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/Frog_preview.gif" alt="Frog-Go preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Games</span>
+            <div class="card-ext-links">
+              <a href="https://play.google.com/store/apps/details?id=com.lutonstudios.froggo" target="_blank" rel="noopener" class="card-ext-link" title="Google Play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/luton-studios/frog-go" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Frog-Go</h3>
+          <p class="card-subtitle">Arcade Game for Android</p>
+          <div class="card-award">📱 Released on Google Play</div>
+          <p class="card-desc">Published arcade jumping game with leaderboards via Google Play Services, AdMob integration, and a full frog and map customization system.</p>
+          <div class="card-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Android</span>
+            <span class="tag">Blender</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio Visualizer -->
+      <div class="project-card fade-up delay-1" data-category="graphics">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/Audio_bg.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/Audio_preview.gif" alt="Audio Visualizer preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Graphics</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/audio-project" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Audio Visualizer</h3>
+          <p class="card-subtitle">Audio Processing</p>
+          <p class="card-desc">Processing-based visualizer that transforms MP3 amplitude data and note sequences into dynamic wave animations with a custom wave function.</p>
+          <div class="card-tags">
+            <span class="tag">Processing</span>
+            <span class="tag">Java</span>
+            <span class="tag">Audio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="project-card fade-up delay-2" data-category="ml">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/ML_BG.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/ML_icon.png" alt="Machine Learning preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">ML</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/machine-learning" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Machine Learning Projects</h3>
+          <p class="card-subtitle">ML Experiments</p>
+          <p class="card-desc">Language detection via back-propagation (classifying English words) and a Tic-Tac-Toe AI trained through genetic algorithms.</p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Neural Networks</span>
+            <span class="tag">Genetic Algorithms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Than Just Chess -->
+      <div class="project-card fade-up" data-category="games">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/mtjc_bg.jpg');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/mtjc_preview.gif" alt="More Than Just Chess preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Games</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/more-than-just-chess" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">More Than Just Chess</h3>
+          <p class="card-subtitle">Modified Chess Game</p>
+          <p class="card-desc">A modern take on chess where pieces have mana and HP, can evolve into other pieces, and abilities change the flow of the game.</p>
+          <div class="card-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Game Dev</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tossing Demo -->
+      <div class="project-card fade-up delay-1" data-category="games">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/Tossing_bg.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/Toss_preview.gif" alt="Tossing Demo preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Games</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/spatial-tossing" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Tossing Demo</h3>
+          <p class="card-subtitle">Physics Simulation</p>
+          <p class="card-desc">Unity physics demo featuring screen-to-world space input mapping, rigidbody-based object tossing, and a custom wireframe shader.</p>
+          <div class="card-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Shaders</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- First Robotics -->
+      <div class="project-card fade-up delay-2" data-category="systems">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/5428_bg.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/FRC_icon.jpg" alt="First Robotics preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Systems</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/2017-FRC" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">First Robotics</h3>
+          <p class="card-subtitle">FRC Team 5428 — 2017</p>
+          <p class="card-desc">Robot control software used at provincial competitions, featuring Xbox controller input handling and live camera feedback over WiFi.</p>
+          <div class="card-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">Hardware</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Societatem -->
+      <div class="project-card fade-up" data-category="games">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/Societatem_bg.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/Societatem_preview.gif" alt="Societatem preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Games</span>
+            <div class="card-ext-links">
+              <a href="https://www.youtube.com/watch?v=tcYPXPr2piE" target="_blank" rel="noopener" class="card-ext-link" title="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Societatem</h3>
+          <p class="card-subtitle">64-Player Multiplayer FPS</p>
+          <div class="card-award">🏆 2nd Place Indie Game of 2014 — ArmedUnity</div>
+          <p class="card-desc">64-player multiplayer FPS with large maps, vehicles, a variety of weapons, class progression system, and an in-game item shop.</p>
+          <div class="card-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Multiplayer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZombiesSurvivorZ -->
+      <div class="project-card fade-up delay-1" data-category="games">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/ZSZ_bg.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/ZSZ_preview.gif" alt="ZombieSurvivorZ preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Games</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/zombiesurvivorz" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">ZombieSurvivorZ</h3>
+          <p class="card-subtitle">Top-Down Shooter</p>
+          <p class="card-desc">Top-down zombie shooter written in Java with color-texture-based tile map generation and a custom pathfinding enemy AI using Java Swing.</p>
+          <div class="card-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Java Swing</span>
+            <span class="tag">Game Dev</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Older Projects -->
+      <div class="project-card fade-up delay-2" data-category="games">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background-image:url('/images/airhockey_bg.png');"></div>
+          <img class="card-preview-icon" loading="lazy" src="/images/OP_Preview.gif" alt="Older Projects preview">
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Games</span>
+            <div class="card-ext-links">
+              <a href="https://github.com/mast0rbill/old-java-programs" target="_blank" rel="noopener" class="card-ext-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Older Projects</h3>
+          <p class="card-subtitle">Early Programming Highlights</p>
+          <p class="card-desc">A collection of early projects: a 3D rendering engine with LWJGL, a two-player air hockey game, and a scientific calculator — all in Java.</p>
+          <div class="card-tags">
+            <span class="tag">Java</span>
+            <span class="tag">LWJGL</span>
+            <span class="tag">Java Swing</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </div><!-- /projects-inner -->
+</section>
