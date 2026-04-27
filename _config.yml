@@ -1,0 +1,11 @@
+title: William's Web Portfolio
+description: Personal portfolio of William Liu
+baseurl: ""
+url: "https://mast0rbill.github.io"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - TODO.txt
+  - vendor

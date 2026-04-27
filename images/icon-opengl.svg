@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- Sphere silhouette -->
+  <circle cx="40" cy="40" r="27" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.88" stroke-width="2"/>
+  <!-- Equator ellipse -->
+  <ellipse cx="40" cy="40" rx="27" ry="9"   stroke="white" stroke-opacity="0.5"  stroke-width="1.2"/>
+  <!-- Upper latitude -->
+  <ellipse cx="40" cy="31" rx="21" ry="6.5" stroke="white" stroke-opacity="0.32" stroke-width="1"/>
+  <!-- Lower latitude -->
+  <ellipse cx="40" cy="49" rx="21" ry="6.5" stroke="white" stroke-opacity="0.32" stroke-width="1"/>
+  <!-- Prime meridian -->
+  <line x1="40" y1="13" x2="40" y2="67"     stroke="white" stroke-opacity="0.5"  stroke-width="1.2"/>
+  <!-- PBR specular highlight -->
+  <circle cx="28" cy="26" r="5.5" fill="white" fill-opacity="0.5"/>
+  <circle cx="26" cy="24" r="2.5" fill="white" fill-opacity="0.9"/>
+</svg>
