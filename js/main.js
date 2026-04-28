@@ -1,31 +1,23 @@
-// ── Cursor glow ──────────────────────────────────────────────
-const glow = document.createElement('div');
-glow.className = 'cursor-glow';
-document.body.appendChild(glow);
-window.addEventListener('mousemove', e => {
-  glow.style.transform = `translate(${e.clientX - 250}px, ${e.clientY - 250}px)`;
-}, { passive: true });
+// Cursor glow
+const glow = document.getElementById('cursor-glow');
+if (glow) {
+  window.addEventListener('mousemove', e => {
+    glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+  }, { passive: true });
+}
 
-// ── Navbar: transparent over dark hero, frosted after scrolling ──
-const nav   = document.getElementById('site-nav');
-const hero  = document.querySelector('.hero');
-
+// Navbar scroll state
+const nav = document.getElementById('site-nav');
 function updateNav() {
   if (!nav) return;
-  const scrolled = window.scrollY > 40;
-  nav.classList.toggle('scrolled', scrolled);
-  if (hero) {
-    const heroBottom = hero.getBoundingClientRect().bottom;
-    nav.classList.toggle('on-hero', heroBottom > 60);
-  }
+  nav.classList.toggle('scrolled', window.scrollY > 40);
 }
 updateNav();
 window.addEventListener('scroll', updateNav, { passive: true });
 
-// ── Project filter ────────────────────────────────────────────
+// Project filter
 const filterBtns  = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
-
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('active'));
@@ -37,10 +29,10 @@ filterBtns.forEach(btn => {
   });
 });
 
-// ── Scroll-in animations ──────────────────────────────────────
+// Scroll-in animations
 const fadeEls = document.querySelectorAll('.fade-up');
 if ('IntersectionObserver' in window) {
-  const io = new IntersectionObserver((entries) => {
+  const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
     });
@@ -50,7 +42,8 @@ if ('IntersectionObserver' in window) {
   fadeEls.forEach(el => el.classList.add('visible'));
 }
 
-// ── Scroll hint click ─────────────────────────────────────────
-document.querySelector('.hero-scroll')?.addEventListener('click', () => {
-  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+// Scroll hint
+document.querySelector('.hero-scroll')?.addEventListener('click', e => {
+  e.preventDefault();
+  document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
 });
