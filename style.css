@@ -36,23 +36,6 @@ img { max-width: 100%; height: auto; display: block; }
 ::selection { background: var(--accent); color: var(--bg); }
 
 /* ============================================================
-   Scanline overlay
-   ============================================================ */
-.scanlines {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  pointer-events: none;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 3px,
-    rgba(0,0,0,.04) 3px,
-    rgba(0,0,0,.04) 6px
-  );
-}
-
-/* ============================================================
    Cursor glow
    ============================================================ */
 .cursor-glow {
@@ -249,8 +232,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Profile photo */
 .hero-photo {
-  width: 180px;
-  height: 180px;
+  width: 520px;
+  aspect-ratio: 3 / 2;
   border: 2px solid var(--border-lit);
   flex-shrink: 0;
   position: relative;
@@ -260,11 +243,7 @@ img { max-width: 100%; height: auto; display: block; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(60%) contrast(1.05);
-  transition: filter .4s ease;
-}
-.hero-photo:hover img {
-  filter: grayscale(0%) contrast(1);
+  object-position: right center;
 }
 
 /* Scroll indicator */
@@ -354,6 +333,19 @@ img { max-width: 100%; height: auto; display: block; }
   margin-top: .15rem;
 }
 .exp-publication:hover { color: var(--text-bright); }
+.exp-co-logo {
+  height: 28px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+  align-self: center;
+  margin-left: auto;
+  flex-shrink: 0;
+  opacity: 0.35;
+  filter: grayscale(1) brightness(2);
+  transition: opacity var(--t);
+}
+.exp-item:hover .exp-co-logo { opacity: 0.65; }
 
 /* ============================================================
    Projects
@@ -654,12 +646,13 @@ img { max-width: 100%; height: auto; display: block; }
     text-align: left;
     gap: 2rem;
   }
-  .hero-photo { width: 120px; height: 120px; order: -1; }
+  .hero-photo { width: 100%; aspect-ratio: 3 / 2; order: -1; }
   .dos-box-top, .dos-box-bottom { display: none; }
   .dos-box-content { padding-left: 0; }
   .term-footer-inner { flex-direction: column; gap: .5rem; text-align: center; }
   .exp-item { flex-direction: column; gap: .25rem; }
   .exp-dates { min-width: auto; }
+  .exp-co-logo { display: none; }
 }
 @media (max-width: 560px) {
   .projects-grid { grid-template-columns: 1fr; }
